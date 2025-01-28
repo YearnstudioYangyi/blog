@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,20 +17,27 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>标签：编程 - 阳毅-个人博客</title>
+  <title>Scanf-真正的神 - 阳毅-个人博客</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="阳毅-个人博客">
-<meta property="og:url" content="https://yangyi.yearnstudio.cn/tags/%E7%BC%96%E7%A8%8B/index.html">
+    <meta name="description" content="第K小的数 - 洛谷  很久之前的时候，我做了这道题。看到题的一瞬间就是sort，显然是Timeout。5个测试点爆了2个。然后又去查了下nth_element，发现这玩意挺好用的，然后就用了，但仍然是Timeout。这就奇怪了和题解貌似没啥区别？仔细一看，原来题解上使用的是scanf，而我使用的是cin。相信各位和我一样，都不止一次在其他地方见到关于scanf和cin的区别的描述，最大的区别就">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scanf-真正的神">
+<meta property="og:url" content="https://yangyi.yearnstudio.cn/2025/01/28/Scanf-%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%A5%9E/index.html">
 <meta property="og:site_name" content="阳毅-个人博客">
+<meta property="og:description" content="第K小的数 - 洛谷  很久之前的时候，我做了这道题。看到题的一瞬间就是sort，显然是Timeout。5个测试点爆了2个。然后又去查了下nth_element，发现这玩意挺好用的，然后就用了，但仍然是Timeout。这就奇怪了和题解貌似没啥区别？仔细一看，原来题解上使用的是scanf，而我使用的是cin。相信各位和我一样，都不止一次在其他地方见到关于scanf和cin的区别的描述，最大的区别就">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-01-28T00:21:00.000Z">
+<meta property="article:modified_time" content="2025-01-28T01:20:10.527Z">
 <meta property="article:author" content="阳毅">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="O2优化">
 <meta name="twitter:card" content="summary">
   
   
   
-  
+  <meta name="keywords" content="算法,C++,O2优化">
 
   <!-- feed -->
   
@@ -46,7 +53,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="undefined" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://vip.123pan.cn/1833307342/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E5%86%85%E9%83%A8%E4%BD%BF%E7%94%A8/IMG_20240430_213221.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">阳毅-个人博客</div><div class="sub normal cap">保持热爱，奔赴山海</div><div class="sub hover cap" style="opacity:0"> 你瞅啥</div></a></div></header>
@@ -58,26 +65,56 @@
 <nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/01/28/Scanf-%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%A5%9E/"><span class="title">Scanf-真正的神</span></a><a class="item title" href="/2024/12/13/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%9D%80%E7%BA%AA%E5%BF%B5%E6%97%A5/"><span class="title">南京大屠杀纪念日</span></a><a class="item title" href="/2025/01/28/Pandasun%E7%9A%84%E7%B3%96%E6%9E%9C%E9%98%B5-%E7%BA%AFcout%E9%A2%98%E7%9B%AE/"><span class="title">Pandasun的糖果-纯cout题目</span></a><a class="item title" href="/2024/12/08/%E5%AF%B9%E4%BA%8E%E7%BC%96%E7%A8%8B%E7%9A%84%E7%9C%8B%E6%B3%95/"><span class="title">对于编程的看法</span></a><a class="item title" href="/2024/11/28/hello-world/"><span class="title">博客，上线！</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://vip.123pan.cn/1833307342/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E5%86%85%E9%83%A8%E4%BD%BF%E7%94%A8/IMG_20240430_213221.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">阳毅-个人博客</div><div class="sub normal cap">保持热爱，奔赴山海</div><div class="sub hover cap" style="opacity:0"> 你瞅啥</div></a></div></header>
-
- 
 
 
 
 
-<div class="navbar top"><nav class="post"><a href="/">近期发布</a><a href="/categories/">分类</a><a class="active" href="/tags/">标签：编程</a><a href="/archives/">归档</a></nav></div>
-<div class="post-list post"><a class="post-card post" href="/2024/12/08/%E5%AF%B9%E4%BA%8E%E7%BC%96%E7%A8%8B%E7%9A%84%E7%9C%8B%E6%B3%95/">
-<article class="md-text"><h2 class="post-title">对于编程的看法</h2><div class="excerpt"><p>
-仅代表个人观点，有不同观点可以提出
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-01-28T00:21:00.000Z">2025-01-28</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-01-28T01:20:10.527Z">2025-01-28</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>Scanf-真正的神</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1923">第K小的数 - 洛谷</a></p>
+</blockquote>
+<p>很久之前的时候，我做了这道题。看到题的一瞬间就是<strong>sort</strong>，显然是Timeout。5个测试点爆了2个。<br><br>然后又去查了下<strong>nth_element</strong>，发现这玩意挺好用的，然后就用了，但仍然是Timeout。<br><br>这就奇怪了<br><br>和题解貌似没啥区别？<br><br>仔细一看，原来题解上使用的是scanf，而我使用的是cin。<br><br>相信各位和我一样，都不止一次在其他地方见到关于scanf和cin的区别的描述，最大的区别就是<br></p>
+<blockquote>
+<p>scanf要比cin快<br></p>
+</blockquote>
+<p>于是我将cin替换为了scanf，OK过了</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://c.biancheng.net/view/7476.html">nth_element介绍</a></p>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2025/01/28/Pandasun%E7%9A%84%E7%B3%96%E6%9E%9C%E9%98%B5-%E7%BA%AFcout%E9%A2%98%E7%9B%AE/">Pandasun的糖果-纯cout题目</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/12/13/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%9D%80%E7%BA%AA%E5%BF%B5%E6%97%A5/">南京大屠杀纪念日</a></div></section></div>
 
 
-我对AI的看法其实吧，很多人都十分抗拒这个玩意。但是我觉得，AI它既然被做出来了，我们就应该使用它，而不是为了什么独立、自主反对它。因为AI知道的永远比你多，它的代码也大概率比你好，而且AI最大的好处就是：即...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-12-07T23:54:00.000Z">2024-12-08</time></span></div></article>
-</a></div>
+
+
 
 
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">阳毅</a> 使用 hexo 创建。<br><a href="https://icp.gov.moe/?keyword=20250212" target="_blank">萌ICP备20250212号</a><br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>

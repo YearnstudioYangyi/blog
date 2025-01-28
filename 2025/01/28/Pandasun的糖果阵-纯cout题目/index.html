@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,20 +17,29 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>标签：编程 - 阳毅-个人博客</title>
+  <title>Pandasun的糖果-纯cout题目 - 阳毅-个人博客</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="阳毅-个人博客">
-<meta property="og:url" content="https://yangyi.yearnstudio.cn/tags/%E7%BC%96%E7%A8%8B/index.html">
+    <meta name="description" content="[T535983]Pandasun的糖果  以下为题目 PandaSun的糖果题目背景idea by wizard PandaSun超级喜欢糖果，也非常喜欢排列，他有一个糖果阵，在每次取糖果吃的时候，他需要维护糖果阵的整齐。 请你帮PandaSun维护一下，PandaSun会给你糖吃。 题目描述PandaSun有一个 $n$ 行 $m$ 列的糖果阵，每一次吃糖果，他都会选择 $r$ 行 $c$">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pandasun的糖果-纯cout题目">
+<meta property="og:url" content="https://yangyi.yearnstudio.cn/2025/01/28/Pandasun%E7%9A%84%E7%B3%96%E6%9E%9C%E9%98%B5-%E7%BA%AFcout%E9%A2%98%E7%9B%AE/index.html">
 <meta property="og:site_name" content="阳毅-个人博客">
+<meta property="og:description" content="[T535983]Pandasun的糖果  以下为题目 PandaSun的糖果题目背景idea by wizard PandaSun超级喜欢糖果，也非常喜欢排列，他有一个糖果阵，在每次取糖果吃的时候，他需要维护糖果阵的整齐。 请你帮PandaSun维护一下，PandaSun会给你糖吃。 题目描述PandaSun有一个 $n$ 行 $m$ 列的糖果阵，每一次吃糖果，他都会选择 $r$ 行 $c$">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/vjudge_pic/CF2035A/958314060b9182d5223494dfb5da32d06c99cb0a.png">
+<meta property="article:published_time" content="2025-01-28T00:38:00.000Z">
+<meta property="article:modified_time" content="2025-01-28T01:18:29.076Z">
 <meta property="article:author" content="阳毅">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="公式">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/vjudge_pic/CF2035A/958314060b9182d5223494dfb5da32d06c99cb0a.png">
   
   
   
-  
+  <meta name="keywords" content="算法,C++,公式">
 
   <!-- feed -->
   
@@ -46,7 +55,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="undefined" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://vip.123pan.cn/1833307342/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E5%86%85%E9%83%A8%E4%BD%BF%E7%94%A8/IMG_20240430_213221.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">阳毅-个人博客</div><div class="sub normal cap">保持热爱，奔赴山海</div><div class="sub hover cap" style="opacity:0"> 你瞅啥</div></a></div></header>
@@ -58,32 +67,92 @@
 <nav class="menu dis-select"><a class="nav-item active" title="博客" href="/" style="color:#1BCDFC"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M5.879 2.879C5 3.757 5 5.172 5 8v8c0 2.828 0 4.243.879 5.121C6.757 22 8.172 22 11 22h2c2.828 0 4.243 0 5.121-.879C19 20.243 19 18.828 19 16V8c0-2.828 0-4.243-.879-5.121C17.243 2 15.828 2 13 2h-2c-2.828 0-4.243 0-5.121.879M8.25 17a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75M9 12.25a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5zM8.25 9A.75.75 0 0 1 9 8.25h6a.75.75 0 0 1 0 1.5H9A.75.75 0 0 1 8.25 9" clip-rule="evenodd"/><path fill="currentColor" d="M5.235 4.058C5 4.941 5 6.177 5 8v8c0 1.823 0 3.058.235 3.942L5 19.924c-.975-.096-1.631-.313-2.121-.803C2 18.243 2 16.828 2 14v-4c0-2.829 0-4.243.879-5.121c.49-.49 1.146-.707 2.121-.803zm13.53 15.884C19 19.058 19 17.822 19 16V8c0-1.823 0-3.059-.235-3.942l.235.018c.975.096 1.631.313 2.121.803C22 5.757 22 7.17 22 9.999v4c0 2.83 0 4.243-.879 5.122c-.49.49-1.146.707-2.121.803z" opacity=".5"/></svg></a></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/01/28/Scanf-%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%A5%9E/"><span class="title">Scanf-真正的神</span></a><a class="item title" href="/2024/12/13/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%B1%A0%E6%9D%80%E7%BA%AA%E5%BF%B5%E6%97%A5/"><span class="title">南京大屠杀纪念日</span></a><a class="item title" href="/2025/01/28/Pandasun%E7%9A%84%E7%B3%96%E6%9E%9C%E9%98%B5-%E7%BA%AFcout%E9%A2%98%E7%9B%AE/"><span class="title">Pandasun的糖果-纯cout题目</span></a><a class="item title" href="/2024/12/08/%E5%AF%B9%E4%BA%8E%E7%BC%96%E7%A8%8B%E7%9A%84%E7%9C%8B%E6%B3%95/"><span class="title">对于编程的看法</span></a><a class="item title" href="/2024/11/28/hello-world/"><span class="title">博客，上线！</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://vip.123pan.cn/1833307342/%E5%B7%A5%E4%BD%9C%E5%AE%A4%E5%86%85%E9%83%A8%E4%BD%BF%E7%94%A8/IMG_20240430_213221.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">阳毅-个人博客</div><div class="sub normal cap">保持热爱，奔赴山海</div><div class="sub hover cap" style="opacity:0"> 你瞅啥</div></a></div></header>
-
- 
 
 
 
 
-<div class="navbar top"><nav class="post"><a href="/">近期发布</a><a href="/categories/">分类</a><a class="active" href="/tags/">标签：编程</a><a href="/archives/">归档</a></nav></div>
-<div class="post-list post"><a class="post-card post" href="/2024/12/08/%E5%AF%B9%E4%BA%8E%E7%BC%96%E7%A8%8B%E7%9A%84%E7%9C%8B%E6%B3%95/">
-<article class="md-text"><h2 class="post-title">对于编程的看法</h2><div class="excerpt"><p>
-仅代表个人观点，有不同观点可以提出
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-01-28T00:38:00.000Z">2025-01-28</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-01-28T01:18:29.076Z">2025-01-28</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>Pandasun的糖果-纯cout题目</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><blockquote>
+<p>[T535983]Pandasun的糖果<br></p>
+</blockquote>
+<p><strong>以下为题目</strong></p>
+<h1 id="PandaSun的糖果"><a href="#PandaSun的糖果" class="headerlink" title="PandaSun的糖果"></a>PandaSun的糖果</h1><h2 id="题目背景"><a href="#题目背景" class="headerlink" title="题目背景"></a>题目背景</h2><p>idea by wizard</p>
+<p>PandaSun超级喜欢糖果，也非常喜欢排列，他有一个糖果阵，在每次取糖果吃的时候，他需要维护糖果阵的整齐。</p>
+<p>请你帮PandaSun维护一下，PandaSun会给你糖吃。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>PandaSun有一个 $n$ 行 $m$ 列的糖果阵，每一次吃糖果，他都会选择 $r$ 行 $c$ 列的糖果吃掉。</p>
+<p>从 $1$ 开始，按照行大号顺序给每个人编号，即编号为 $(r−1)⋅m+c<br>$ 的人最初位于 $(r,c)$。</p>
+<p>为了维护每一次糖果阵的整齐，PandaSun会使用递补策略。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.luogu.com.cn/upload/vjudge_pic/CF2035A/958314060b9182d5223494dfb5da32d06c99cb0a.png"></p>
+<p>比如说PandaSun要吃这个红色糖果，他最后的糖果阵就会变成图三那样。</p>
+<p>爱科学的PandaSun想算出他每次吃糖果的贡献值。</p>
+<p>贡献值的算法：</p>
+<p>贡献值是每个移动的糖移动的曼哈顿距离之和。</p>
+<p>如果某一个糖最初在 $(r_0,c_0)$，然后移动到 $(r_1,c_1)$，则曼哈顿距离为 $|r_0−r_1|+|c_0−c_1|$。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行包含一个整数 $t<br> ( 1≤t≤10^4<br> )$ - 测试用例数。</p>
+<p>每个测试用例的唯一一行包含 4<br> 个整数 $n$<br> 、 $m$<br> 、 $r$<br> 和 $c(1≤r≤n≤10^6<br> , 1≤c≤m≤10^6<br> )$，其中 $n$<br> 是行数， $m$<br> 是列数， $(r,c)$<br> 是离开糖最初所在的位置。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>对于每组数据，直接输出贡献值即可。</p>
+<h2 id="样例-1"><a href="#样例-1" class="headerlink" title="样例 #1"></a>样例 #1</h2><h3 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入 #1"></a>样例输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">2 3 1 2</span><br><span class="line">2 2 2 1</span><br><span class="line">1 1 1 1</span><br><span class="line">1000000 1000000 1 1</span><br></pre></td></tr></table></figure>
+
+<h3 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出 #1"></a>样例输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">1</span><br><span class="line">0</span><br><span class="line">1999998000000</span><br></pre></td></tr></table></figure>
+
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示<br></h2><h2 id="校正：PandaSun"><a href="#校正：PandaSun" class="headerlink" title="校正：PandaSun"></a>校正：PandaSun<br></h2><h2 id="第一次思考"><a href="#第一次思考" class="headerlink" title="第一次思考"></a>第一次思考<br></h2><p>主打一个跟着题目走，先写哈夫曼距离，然后是从编号到坐标，再从坐标到编号。极其的痛苦，而且还很失败，测试数据都过不了。<br><br>但是我一直在写这个，写了一周左右，直接删了，从头来！<br></p>
+<h2 id="第二次思考"><a href="#第二次思考" class="headerlink" title="第二次思考"></a>第二次思考<br></h2><h3 id="优化哈夫曼距离计算"><a href="#优化哈夫曼距离计算" class="headerlink" title="优化哈夫曼距离计算"></a>优化哈夫曼距离计算</h3><p>首先，我优化了哈夫曼距离这一段。因为这里糖果移动只存在2种可能：①在一行开头；②不在一行的开头。<br><br>对于①，其距离为m，为什么？因为挪动到上一行，其Δx为(m - 1),Δy为1(移动1行)。<br><br>对于②，就是1(没有动行，只前进一列)。<br></p>
+<h3 id="优化转换"><a href="#优化转换" class="headerlink" title="优化转换"></a>优化转换</h3><p>这个题本身具有一定的迷惑性，它把一维编号与二维坐标混一块了，这就给我了一个错误的信号：必须互相转化。<br><br>但是，有了上一步的优化，我们可以不要二维坐标，因为不再需要计算哈夫曼距离，只需要判断当前糖果是否是每一列第一个，换句话说就是编号减1能被m整除，是的话就加m，不是就加1.这里我们甚至用三目运算符都OK！<br><br>完了？是，但是这样也会超时<br></p>
+<hr>
+<h2 id="第三次思考"><a href="#第三次思考" class="headerlink" title="第三次思考"></a>第三次思考<br></h2><p>于是我就在想有没有万能公式啊，还真有！<br><br>首先，我们先来计算从当前列到前一行了当前列的所有糖果向前移动的“贡献值”<br></p>
+<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步<br></h3><p>我们观察可以发现，上述中一行糖果贡献值之和中只有一个是m，剩下的都是1.剩下了多少？m-1个，综上，我们可以知道，每跨一行，贡献值加 2m - 1。<br></p>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步<br></h3><p>既然每一行都一样没那不如一步到位，总共动(n - r)行，这应该很容易推到得到，于是我们得到了(n - r)(2m - 1)是从起始位置移动到最后一行同一列所有“贡献值”</p>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步<br></h3><p>OK呀胜利在望，只剩最后一行剩下的不分离，更简单(m - c)秒了 ，最终得到了(n - r)(2m - 1)+(m - c)这个公式，收工！<br></p>
+<hr>
+<p>以上思路写下来的代码就可以过了，自己动手吧！<br><br>真的是纯cout好吗</p>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2025/01/28/Scanf-%E7%9C%9F%E6%AD%A3%E7%9A%84%E7%A5%9E/">Scanf-真正的神</a></div></section></div>
 
 
-我对AI的看法其实吧，很多人都十分抗拒这个玩意。但是我觉得，AI它既然被做出来了，我们就应该使用它，而不是为了什么独立、自主反对它。因为AI知道的永远比你多，它的代码也大概率比你好，而且AI最大的好处就是：即...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-12-07T23:54:00.000Z">2024-12-08</time></span></div></article>
-</a></div>
+
+
 
 
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">阳毅</a> 使用 hexo 创建。<br><a href="https://icp.gov.moe/?keyword=20250212" target="_blank">萌ICP备20250212号</a><br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PandaSun%E7%9A%84%E7%B3%96%E6%9E%9C"><span class="toc-text">PandaSun的糖果</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E8%83%8C%E6%99%AF"><span class="toc-text">题目背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="toc-text">输入格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="toc-text">输出格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B-1"><span class="toc-text">样例 #1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%85%A5-1"><span class="toc-text">样例输入 #1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%87%BA-1"><span class="toc-text">样例输出 #1</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA"><span class="toc-text">提示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%A1%E6%AD%A3%EF%BC%9APandaSun"><span class="toc-text">校正：PandaSun</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%80%9D%E8%80%83"><span class="toc-text">第一次思考</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%80%9D%E8%80%83"><span class="toc-text">第二次思考</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96%E5%93%88%E5%A4%AB%E6%9B%BC%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97"><span class="toc-text">优化哈夫曼距离计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96%E8%BD%AC%E6%8D%A2"><span class="toc-text">优化转换</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%80%9D%E8%80%83"><span class="toc-text">第三次思考</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5"><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5"><span class="toc-text">第三步</span></a></li></ol></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
